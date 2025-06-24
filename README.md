@@ -16,6 +16,7 @@ This application is heavily inspired by [qbit_manage](https://github.com/StuffAn
 * **Name Keywords:** COMING SOON. Automatically assign any tag you want based on keywords found in a torrent's name.
 * **Completed Torrent Handling:** COMING SOON. Apply completed torrent handling behaviors based on tag.
 * **Super Seeding:** COMING SOON. Apply super seeding behaviors based on tag.
+* **Web UI:** COMING SOMETIME. Web UI management for ease of use.
 
 # **Getting Started**
 
