@@ -20,8 +20,6 @@ A simple, lightweight, and customizable qBittorrent tag and seeding rule manager
 
 * A running qBittorrent instance with the Web UI enabled.
 
-* Docker installed. Docker Compose is recommended for the simplest setup.
-
 ## Installation
 1. Create a directory for your qbittaggarr configuration.
 2. Create your config.yml file. Copy the contents from [config.yml](https://github.com/SevenTwelvia/qbittaggarr/blob/main/config.yml) and edit it to match your setup.
