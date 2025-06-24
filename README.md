@@ -37,8 +37,6 @@ services:
       - HOME=/app
       - PYTHONIOENCODING=utf-8
       - LANG=C.UTF-8
-    # For systems like TrueNAS/Unraid, you might need to set the PUID/PGID
-    # user: "568:568"
     restart: unless-stopped
 ```
 4. Start the application.
