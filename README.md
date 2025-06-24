@@ -24,7 +24,7 @@ This application is heavily inspired by [qbit_manage](https://github.com/StuffAn
 * A running qBittorrent instance with the Web UI enabled.
 
 ## Installation
-1. Create a directory for your qbittaggarr configuration.
+1. Create a directory for your qBittaggarr configuration.
 2. Create your config.yml file. Copy the contents from [config.yml](https://github.com/SevenTwelvia/qbittaggarr/blob/main/config.yml) and edit it to match your setup.
 3. Pull this image:
 ```
