@@ -24,44 +24,12 @@ A simple, lightweight, and customizable qBittorrent tag and seeding rule manager
 
 ## Installation
 1. Create a directory for your qbittaggarr configuration.
-```
-mkdir /path/to/your/appdata/qbittaggarr
-```
-  then
-```
-cd /path/to/your/appdata/qbittaggarr
-```
-2. Inside that new directory, create a config.yml file. Copy the contents from the example in the Configuration section below and edit it to match your setup.
-```
-nano config.yml
-```
-
-3. To run the application, you have two options:
-
-### **Option A: Use a Pre-built Image (Recommended)**
-This is the easiest method. It pulls the ready-to-use image from a Docker registry.
+2. Create your config.yml file. Copy the contents from [config.yml](https://github.com/SevenTwelvia/qbittaggarr/blob/main/config.yml) and edit it to match your setup.
+3. Install this image:
 ```
 services:
   qbittaggarr:
     image: ghcr.io/your-github-username/qbittaggarr:latest # Replace with your actual image path
-    container_name: qbittaggarr
-    volumes:
-      - ./config.yml:/app/config.yml:ro
-    environment:
-      - HOME=/app
-      - PYTHONIOENCODING=utf-8
-      - LANG=C.UTF-8
-    # For systems like TrueNAS/Unraid, you might need to set the PUID/PGID
-    # user: "568:568"
-    restart: unless-stopped
-```
-### **Option B: Build from Source**
-Use this method if you want to modify the code. In addition to the ```config.yml```, you will need to have the ```Dockerfile```, ```main.py```, and ```requirements.txt``` from this repository in the same directory as your docker-compose.yml.
-```
-services:
-  qbittaggarr:
-    build:
-      context: .
     container_name: qbittaggarr
     volumes:
       - ./config.yml:/app/config.yml:ro
