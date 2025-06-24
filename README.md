@@ -2,20 +2,17 @@
 
 A simple, lightweight, and customizable qBittorrent tag and seeding rule manager.
 
-qbittaggarr is a Docker application that connects to your qBittorrent instance and automatically applies tags and seeding rules to your torrents based on their trackers or other keywords.
+<b>qbittaggarr</b> is a Docker application that connects to your qBittorrent instance and automatically applies tags and seeding rules to your torrents based on their trackers using defined keywords.
 
-Features
-Customizable Rules: Automatically assign any tag you want based on keywords found in a torrent's tracker list.
+# <b>Features</b>
 
-Flexible Seeding Limits: Define unique seeding rules (ratio and time limits) for each custom tag.
 
-"Forever" Override: Manually add a forever tag to any torrent to give it infinite seeding time and ratio.
-
-Quiet Operation: By default, the script only logs a summary of its actions at the end of each cycle.
-
-Verbose Logging: An optional setting for detailed, per-torrent logging, perfect for debugging or initial setup.
-
-Dry Run Mode: Test your rules and see what the script would do without making any actual changes to qBittorrent.
+<li><b>Customizable Rules:</b> Automatically assign any tag you want based on keywords found in a torrent's tracker list.</li>
+<li><b>Flexible Seeding Limits:</b> Define unique seeding rules (ratio and time limits) for each custom tag.</li>
+<li><b>"Forever" Override:</b> Manually add a forever tag to any torrent to give it infinite seeding time and ratio.</li>
+<li><b>Quiet Operation:</b> By default, the script only logs a summary of its actions at the end of each cycle.</li>
+<li><b>Verbose Logging:</b> An optional setting for detailed, per-torrent logging, perfect for debugging or initial setup.</li>
+<li><b>Dry Run Mode:</b> Test your rules and see what the script would do without making any actual changes to qBittorrent.</li>
 
 Getting Started
 Prerequisites
