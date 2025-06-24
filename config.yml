@@ -37,7 +37,7 @@ rules:
       ratio: 1.0
       seeding_time_limit: 1 # in days
       
-    # This tag is a manual override.
+    # This tag is a manual override. Manually give a torrent this tag to apply the accompanying ratio and seeding_time_limit.
     forever:
       ratio: -1
       seeding_time_limit: -1
