@@ -1,18 +1,21 @@
 # **qBittaggarr**
 
-A simple, lightweight, and customizable qBittorrent tag and seeding rule manager.
+A lightweight and customizable qBittorrent tag and torrent rule manager.
 
 **qBittaggarr** is a Docker application that connects to your qBittorrent instance and automatically applies tags and seeding rules to your torrents based on their trackers using defined keywords.
 
+This application is heavily inspired by [qbit_manage](https://github.com/StuffAnThings/qbit_manage), but is designed to be easier to implement, and to handle all things tags in qBittorrent.
+
 # **Features**
 
-
-* **Customizable Rules:** Automatically assign any tag you want based on keywords found in a torrent's tracker list.
+* **Tracker Keywords:** Automatically assign any tag you want based on keywords found in a torrent's tracker list.
+* **Default Behaviors:** Default tag/torrent behaviors for any torrents that don't meet given criteria.
 * **Flexible Seeding Limits:** Define unique seeding rules (ratio and time limits) for each custom tag.
 * **"Forever" Override:** Manually add a forever tag to any torrent to give it infinite seeding time and ratio.
-* **Quiet Operation:** By default, the script only logs a summary of its actions at the end of each cycle.
-* **Verbose Logging:** An optional setting for detailed, per-torrent logging, perfect for debugging or initial setup.
-* **Dry Run Mode:** Test your rules and see what the script would do without making any actual changes to qBittorrent.
+* **Speed Limits:** COMING SOON. Apply download/upload speed limits based on tag.
+* **Name Keywords:** COMING SOON. Automatically assign any tag you want based on keywords found in a torrent's name.
+* **Completed Torrent Handling:** COMING SOON. Apply completed torrent handling behaviors based on tag.
+* **Super Seeding:** COMING SOON. Apply super seeding behaviors based on tag.
 
 # **Getting Started**
 
@@ -30,7 +33,7 @@ services:
     image: ghcr.io/seventwelvia/qbittaggarr:latest
     container_name: qbittaggarr
     volumes:
-      - ./path/to/you/config.yml
+      - ./path/to/your/config.yml
     environment:
       - HOME=/app
       - PYTHONIOENCODING=utf-8
