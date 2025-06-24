@@ -16,11 +16,11 @@ verbose_logging: false
 rules:
   # Define your custom tags and their rules here.
   # The script will check them in order and apply the first match it finds.
-  # The main key (e.g., "movies-hd", "private-tracker-A") will be used as the tag.
+  # The main key (e.g., "private", "movies-hd", "private-tracker-A") will be used as the tag.
   custom_tags:
     # Example Rule 1: For a specific private tracker
     private:
-      keywords: ["private-tracker-one.com", "keyword-for-tracker-two"]
+      keywords: ["private-tracker-one.com", "keyword-for-tracker-one"]
       ratio: 10.0
       seeding_time_limit: 30 # in days
 
