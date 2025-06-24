@@ -1,4 +1,4 @@
-<b>qbittaggarr</b>
+# <b>qbittaggarr</b>
 
 A simple, lightweight, and customizable qBittorrent tag and seeding rule manager.
 
